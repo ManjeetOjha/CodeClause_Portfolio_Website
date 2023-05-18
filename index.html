@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Mko logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Manjeet</span><br>Kumar From Bihar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MKO bg photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello Everyone, My name is Manjeet Kumar from Patna, Bihar. I am pursuing B.Tech in Computer
+                        Science. I have experience in various programming languages such as C, C++, Java, and Python,
+                        but I am particularly skilled in Java. I have a keen interest in web development, which is why I
+                        started learning it. Nowadays, I am focused on developing my skills to become a full-stack web
+                        developer.
+                        I have developed several projects single-handedly using HTML, CSS, and JavaScript.
+                        In addition, I have also developed some front-end projects using ReactJS.
+                        Currently, I am focusing on learning backend development to become a full-stack web developer.
+                        I believe that hard work and smart work both are essential to achieve success.I'm committed to
+                        learning new things every day. I enjoy sharing my knowledge with others and always seek out
+                        opportunities to do so.That's all about me.</p>
+                    <div class="tab-title">
+                        <br>
+                        <a class="tab-links active-link" onclick="opentab('skills')">Skills</a>
+                        <a class="tab-links" onclick="opentab('experience')">Experience</a>
+                        <a class="tab-links" onclick="opentab('education')">Education</a>
+                    </div>
+                    <br>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Internship at CodeClause</li>
+                            <li><span>2022 - 2023</span><br>Internship at Google</li>
+                            <li><span>2021 - 2022</span><br>Internship at Microsoft</li>
+                            <li><span>2020 - 2021</span><br>Internship at Internshala</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.Tech From Institute of Technical Education and Research
+                                (ITER),SIKSHA 'O' ANUSANDHAN Bhubaneswar.</li>
+                            <li><span>2020</span><br>Intermediate From St.Xavier's High School Patna.</li>
+                            <li><span>2018</span><br>Matriculation From B.D Public School Patna.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------services----------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="sevices-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the process of creating visually appealing and functional websites using tools
+                        and techniques such as HTML, CSS, and JavaScript. It involves graphic design, user experience
+                        design, and coding to create responsive and optimized websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design is the process of creating user interfaces and experiences that are both
+                        aesthetically pleasing and easy to use. It involves understanding user needs and behaviors to
+                        design interfaces that are intuitive, accessible, and meet the goals of the product or service.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App designing refers to the process of creating user interfaces and experiences for mobile
+                        applications. It involves designing interfaces that are intuitive, user-friendly, and visually
+                        appealing, while also considering the technical constraints of the platform and the user's needs
+                        and behaviors.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---- -------------portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <br>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play
+                                store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play
+                                store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+            <!---- -------------contact------------- -->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i> mko@manjeetkumarojha.me</p>
+                            <p><i class="fa-solid fa-phone"></i> +918651723651</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/manjeetkumar.ojha.5/"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://twitter.com/ManjeetOjha07"><i
+                                        class="fa-brands fa-twitter-square"></i></a>
+                                <a href="https://www.instagram.com/manjeet_kumar_ojha07/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/manjeetkumarojha07/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/ManjeetOjha"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                            <a href="images/Manjeet Kumar Resume.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2002 - 2023 <i class="fa-solid fa-heart"></i> OJHA GROUP ® </p>
+                </div>
+            </div>
+
+
+
+
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+
+            </script>
+
+            <script>
+
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px";
+                }
+
+
+            </script>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwjcPnEhYtEcW003qiyDcXCljBcitBvu9QwkVxeJ1Oc2W0MfkEVVCdoc2WT7mBcalTD/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Message sent successfully"
+                            setTimeout(function () {
+                                msg.innerHTML = ""
+                            }, 5000)
+                            form.reset()
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+
+</body>
+
+</html>
